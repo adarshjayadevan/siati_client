@@ -1,0 +1,106 @@
+.rs-container {
+  padding: 0;
+  /* background: #2ac8f9 sky blue selected*/
+  /* background: #02a0d0; siati blue selected*/
+}
+
+.rs-container .rs-header {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.rs-footer{
+  margin-inline: auto;
+  gap: 2rem;
+}
+
+.rs-container .rs-footer {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.rs-container .rs-container-has-sidebar {
+  height: 100px;
+}
+
+.rs-header {
+  /* color: #262673; */
+  /* color: #000080; */
+  color: #4c90dd;
+}
+
+.navmenu {
+  font-weight: bold;
+  /* color: #252c42 !important; */
+  color: #000080;
+}
+
+.rs-nav-item-active::before {
+  color: #252c42 !important;
+}
+
+.navmenu:hover {
+  color: #ffff !important;
+  background-color: #000080;
+  transition: background-color 1s ease;
+}
+
+.rs-ripple-pond .rs-ripple{
+  background-color: #000080;
+  color: #ffff;
+  transition: opacity 1s ease-out; 
+  animation: ripple-animation 1s forwards;
+}
+
+.rs-nav-item .rs-input-group {
+  border: 1px solid #4c90dd;
+}
+
+.rs-nav .rs-nav-subtle .rs-nav-horizontal a {
+  color: #252c42;
+}
+
+.rs-nav-item{
+  color: #000080;
+}
+.rs-nav-item-active {
+  color: #252c42;
+}
+
+.navsearch .rs-nav-subtle .rs-nav-item.rs-nav-item-active:before {
+  display: none;
+}
+
+.rs-sidebar {
+  flex: 0 0 150px !important;
+  width: 150px !important;
+  /* background: aliceblue; */
+}
+
+.logo {
+  cursor: pointer;
+  height: 98px;
+  width: inherit;
+  margin-left: 3rem;
+}
+
+.rs-nav-bar {
+  display: none !important;
+}
+
+.siati-heading {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  word-spacing: 0.2em;
+  text-align: center;
+  width: 100%;
+}
+
+.mobile-heading{
+  font-family: "Roboto Slab";
+  color: #4c90dd;
+}

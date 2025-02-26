@@ -1,0 +1,55 @@
+.css-wuxk1e {
+    border-radius: 0 !important;
+}
+
+.event-calender {
+    display: flex;
+    align-items: center;
+}
+
+.event-calendericon {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.event-date {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.event-heading{
+    cursor: pointer;
+}
+
+.registration-link,.past-events-header{
+    color: #000080;
+    cursor: pointer;
+}
+.registration-link .past-events-header:hover {
+    text-decoration: underline;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.icon-container svg {
+    cursor: pointer;
+    color: blue;
+    font-size: 1rem;
+  }
+
+  .profile_para{
+    text-indent: 2rem;
+  }
+
+  .main-heading{
+    font-family: "Roboto Slab" !important;
+    color: #070740;
+    font-size:x-large;
+    font-weight: bold;
+    word-spacing: 0.2em;
+    width: 100%;
+}

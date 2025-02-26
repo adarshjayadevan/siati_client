@@ -1,0 +1,53 @@
+.management_heading {
+    /* font-family: "Secular One", sans-serif; */
+    font-style: italic;
+    font-size: large;
+    /* letter-spacing: 0.1em; */
+    word-spacing: 0.2em;
+    color: rgba(7, 7, 64, 0.92);
+}
+
+.user-details {
+    /* font-family: "Secular One", sans-serif; */
+    color: #fff;
+    font-size: medium;
+}
+
+.user-details_row2 {
+    /* font-family: "Secular One", sans-serif; */
+    color: rgba(7, 7, 64, 0.92);
+    font-size: medium;
+}
+
+.user-details_row3 {
+    /* font-family: "Secular One", sans-serif; */
+    color: rgba(7, 7, 64, 0.92);
+    font-size: medium;
+}
+
+.user-details-addl {
+    /* font-family: "Secular One", sans-serif; */
+    color: #fff;
+    font-size: small;
+}
+
+.user-details-addl-link {
+    color: #4c90dd;
+}
+
+.user-details-addl-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.siati-management-text{
+    width: 600px !important;
+}
+
+.member_designation_text{
+    margin-top: 0 !important;
+}
+
+.governing_class img{
+    width: 0    ;
+}

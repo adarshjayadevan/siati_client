@@ -1,0 +1,40 @@
+.marquee-row {
+  display: flex;
+  overflow: hidden; /* Ensures no overflow beyond the container */
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px; /* Adjust the gap between images */
+  animation: marquee-left-right 20s linear infinite;
+  animation-play-state: running; /* By default, the animation runs */
+}
+
+/* Pause animation on hover */
+.marquee-content:hover {
+  animation-play-state: paused; /* Pauses the animation when hovering over the container */
+}
+
+/* Image styles */
+.marquee-content img {
+  width: 280px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes marquee-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway through the duplicated content */
+  }
+}

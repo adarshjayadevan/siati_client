@@ -1,0 +1,68 @@
+.application-heading {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: larger;
+    /* letter-spacing: 0.1em; */
+    font-weight: bold;
+    word-spacing: 0.2em;
+    text-align: center;
+    width: 100%;
+}
+
+.form-heading{
+    font-family: "Roboto Slab";
+    /* text-transform: uppercase; */
+    font-size:x-large;
+    /* text-decoration: underline; */
+    font-weight: bold;
+    word-spacing: 0.2em;
+    padding-left: 5%;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.rs-form {
+    max-width: none !important;
+    margin: 0% !important;
+    padding: 1rem;
+}
+
+.form-column-cell{
+    width: 50%;
+}
+
+.rs-btn-toolbar{
+    justify-content: center;
+}
+
+.membership-input .rs-input{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.css-tdnrhj .css-0 .css-xumdn4{
+    background: none;
+}
+
+.radio-input{
+    margin-left: 5%;
+}
+
+.quoted{
+    font-family: "Secular One", sans-serif;
+    transform: scaleY(-1) scaleX(-1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    word-spacing: 0.2em;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-font{
+    font-family: "Secular One", sans-serif;
+    font-size: medium;
+}
+
+.download-form-btn{
+    background: #fff !important;
+}

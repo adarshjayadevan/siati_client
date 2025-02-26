@@ -1,0 +1,26 @@
+.quoted_heading {
+    font-family: "Secular One", sans-serif;
+    transform: scaleY(-1) scaleX(-1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: right ;
+    color: #000080;
+  }
+
+  .quoted_heading_two{
+    font-family: "Secular One", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: right ;
+    color: #000080;
+  }
+
+  .identity_avatar .chakra-wrap__listitem {
+    /* justify-content: center !important;
+    align-items: center !important; */
+    margin-inline: auto;
+  }
