@@ -286,7 +286,7 @@ function MembershipForm({ scrollToRef }) {
         return (
             <>
                 <Heading w="100%" textAlign={'center'} fontWeight="normal" mb="2%">
-                    Online Application Form
+                    Membership Form
                 </Heading>
                 <Flex>
                     <FormControl mr="5%">
@@ -433,7 +433,7 @@ function MembershipForm({ scrollToRef }) {
         return (
             <>
                 <Heading w="100%" textAlign={'center'} fontWeight="normal" mb="2%">
-                    Company Overview
+                    Membership Form
                 </Heading>
                 <Form.Group className='membership-input' controlId="profile">
                     <Form.ControlLabel>Company Profile</Form.ControlLabel>
@@ -562,7 +562,7 @@ function MembershipForm({ scrollToRef }) {
                     Membership Information
                 </Heading>
                 <Form>
-                    <Form.Group className='membership-input' controlId="correspondence">
+                    {/* <Form.Group className='membership-input' controlId="correspondence">
                         <Form.ControlLabel>Address for Correspondence</Form.ControlLabel>
                         <Form.Control
                             name="correspondence"
@@ -575,10 +575,10 @@ function MembershipForm({ scrollToRef }) {
                     <Form.Group className='membership-input' controlId="profile">
                         <Form.ControlLabel>Addition Information (If Any)</Form.ControlLabel>
                         <Input as="textarea" rows={3} placeholder="Enter Details" />
-                    </Form.Group>
+                    </Form.Group> */}
 
                     <Box mt="4">
-                        <Form.ControlLabel>Membership Fees</Form.ControlLabel>
+                        <Form.ControlLabel>Membership Fee</Form.ControlLabel>
                         <Table variant="striped">
                             <Thead>
                                 <Tr >
@@ -601,6 +601,118 @@ function MembershipForm({ scrollToRef }) {
                         </Table>
 
                     </Box>
+
+                    <div>
+                        <Text mb={4}>
+                            <strong>Payment Mode:</strong>
+                        </Text>
+
+                        <Text mb={2}>
+                            <strong>Option 1:</strong> Bank transfer by NEFT/RTGS.
+                            <strong>Bank details:</strong> SBI, HAL Branch, A/c No. 10917867729,
+                            IFSC Code-SBIN0001114,
+                            <strong>Beneficiary:</strong> Society of Indian Aerospace Technologies & Industries (SIATI)
+                        </Text>
+
+                        <Text mb={2}>
+                            <strong>Option 2:</strong> DD / Cheque may be drawn in favour of ‘Society of Indian Aerospace Technologies & Industries (SIATI), Bangalore
+                        </Text>
+
+                        <Text mb={4}>
+                            <strong>Details of Payment:</strong>
+                        </Text>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>DD/Cheque No.:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="ddChequeNo" name="ddChequeNo" placeholder="Enter DD/Cheque No." />
+                            </Box>
+                        </Flex>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>Date:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="date" name="date" placeholder="Enter Date" />
+                            </Box>
+                        </Flex>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>Bank Name & Branch:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="bankName" name="bankName" placeholder="Enter Bank Name & Branch" />
+                            </Box>
+                        </Flex>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>Amount Rs.:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="amount" name="amount" placeholder="Enter Amount" />
+                            </Box>
+                        </Flex>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>Signature:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="signature" name="signature" placeholder="Enter Signature" />
+                            </Box>
+                        </Flex>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>Name:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="name" name="name" placeholder="Enter Name" />
+                            </Box>
+                        </Flex>
+
+                        <Flex mb={2} align="center">
+                            <Box w="30%">
+                                <Text><strong>Designation:</strong></Text>
+                            </Box>
+                            <Box w="70%">
+                                <Input id="designation" name="designation" placeholder="Enter Designation" />
+                            </Box>
+                        </Flex>
+
+                        <Text mb={4}>
+                            <strong>Please return completed forms and payment to:</strong>
+                        </Text>
+
+                        <Text mb={2}>
+                            <strong>The Secretary General</strong>
+                        </Text>
+
+                        <Text mb={2}>
+                            Society of Indian Aerospace Technologies & Industries (SIATI)
+                            <br />
+                            Aeronautical Society Building, Suranjandas Road (Off. Old Madras Road)
+                            <br />
+                            Bangalore – 560 075.
+                        </Text>
+
+                        <Text mb={2}>
+                            <strong>Tel:</strong> 080-25275262 / 25219951
+                        </Text>
+
+                        <Text mb={2}>
+                            <strong>Email ID:</strong> office@siati.org
+                        </Text>
+
+                        <Text mb={2}>
+                            <strong>Web:</strong> www.siati.org
+                        </Text>
+                    </div>
 
                     {/* <Form.Group>
                         <ButtonToolbar>
@@ -755,11 +867,16 @@ function MembershipForm({ scrollToRef }) {
                     </Box>
 
                     <Button
-                        width={'200px'}
+                        width={'auto'}
+                        minWidth={'200px'}
+                        maxWidth={'100%'}
                         color={'#070740'}
-
                         marginLeft={'5%'}
                         mb={5}
+                        padding={'10px'}
+                        textAlign={'center'}
+                        whiteSpace={'normal'}
+                        wordBreak={'break-word'}
                         _hover={{
                             _before: {
                                 content: '""',
@@ -804,10 +921,11 @@ function MembershipForm({ scrollToRef }) {
                         }}
                         onClick={() => downloadForm()}
                     >
-                        Download Application Form
+                        Download Membership Form
                     </Button>
 
-                    <Table marginBottom={5}>
+
+                    {/* <Table marginBottom={5}>
                         <Tr>
                             {ButtonColumns.map((elem, idx) => (
                                 <Td key={idx}>
@@ -823,14 +941,14 @@ function MembershipForm({ scrollToRef }) {
                                 </Td>
                             ))}
                         </Tr>
-                    </Table>
+                    </Table> */}
 
 
 
 
                     {/* Form  */}
 
-                    <Box borderWidth="1px"
+                    {/* <Box borderWidth="1px"
                         rounded="lg"
                         shadow="1px 1px 3px rgba(0,0,0,0.3)"
                         marginLeft={'5%'}
@@ -839,10 +957,10 @@ function MembershipForm({ scrollToRef }) {
                         backgroundColor="rgba(255, 255, 255, 0.8)"
                         p={6}
                         as="form">
-                            {Form1()}
-                            {Form2()}
-                            {Form3()}
-                    </Box>
+                        {Form1()}
+                        {Form2()}
+                        {Form3()}
+                    </Box> */}
 
 
                     {/* Single Form */}
@@ -1142,7 +1260,7 @@ function MembershipForm({ scrollToRef }) {
                         p={6}
                         as="form">
                         <Progress hasStripe value={progress} mb="5%" mx="5%" isAnimated></Progress>
-                        {step === 1 ? <Form1 /> : step === 2 ? <Form2 /> : <Form3 />}
+                        {step === 1 ? <Form3 /> : step === 2 ? <Form1 /> : <Form2 />}
                         <ButtonGroup mt="5%" w="100%">
                             <Flex w="100%" justifyContent="space-between">
                                 <Flex>

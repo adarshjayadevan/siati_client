@@ -54,17 +54,19 @@ const Navbar = ({ active, onSelect, scrollToRef, ...props }) => {
   return (
     <Nav style={{marginTop:'10px'}} {...props} activeKey={active} onSelect={onSelect}>
       <Nav.Item className='navmenu' eventKey="home" onClick={()=>navigate('/')}>Home</Nav.Item>
-      <Nav.Item className='navmenu' eventKey="about" onClick={()=>navigate('/about')}>About</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="about" onClick={()=>navigate('/about')}>About Us</Nav.Item>
       <Nav.Item className='navmenu' eventKey="managing" onClick={()=>navigate('/management')}>Governing Council</Nav.Item>
       <Nav.Item className='navmenu' eventKey="membership" onClick={()=>navigate('/membership')}>Membership</Nav.Item>
       {/* <Nav.Item className='navmenu' eventKey="events" onClick={()=>handleSmoothScroll('events')}>Events</Nav.Item> */}
       <Nav.Item className='navmenu' eventKey="events" onClick={()=>navigate('/events')}>Events</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="objectives" onClick={()=>navigate('/objectives')}>Objectives/Activities</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="achievements" >Achievements</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="awards" >Awards</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="exhibitors" onClick={()=>navigate('/exhibitors')}>Exhibitors</Nav.Item>
       <Nav.Item className='navmenu' eventKey="gallery" onClick={()=>navigate('/gallery')}>Gallery</Nav.Item>
       {/* <Nav.Item className='navmenu' eventKey="contact" onClick={() => handleScrollToRef('contact')}>Contact</Nav.Item> */}
-      <Nav.Item className='navmenu' eventKey="exhibitors" onClick={()=>navigate('/exhibitors')}>Exhibitors</Nav.Item>
-      <Nav.Item className='navmenu' eventKey="objectives" onClick={()=>navigate('/objectives')}>Objectives</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="contact" onClick={()=>navigate('/contact')}>Contact Us</Nav.Item>
       <Nav.Item className='navmenu' eventKey="services" onClick={()=>navigate('/services')}>Services</Nav.Item>
-      <Nav.Item className='navmenu' eventKey="contact" onClick={()=>navigate('/contact')}>Contact</Nav.Item>
       {/* <Nav.Item eventKey={"search"} className='navsearch'>
         <InputGroup inside>
           <Input />
@@ -109,16 +111,18 @@ const MobileNavbar = ({ active, onSelect, scrollToRef, ...props }) => {
           </InputGroup>
         </Nav.Item> */}
         <Nav.Item eventKey="home" onClick={()=>navigate('/')}>Home</Nav.Item>
-        <Nav.Item eventKey="about" onClick={()=>navigate('/about')}>About</Nav.Item>
+        <Nav.Item eventKey="about" onClick={()=>navigate('/about')}>About Us</Nav.Item>
         <Nav.Item eventKey="managing" onClick={()=>navigate('/management')}>Governing Council</Nav.Item>
         <Nav.Item eventKey="membership" onClick={()=>navigate('/membership')}>Membership</Nav.Item>
         {/* <Nav.Item eventKey="events" onClick={()=>handleSmoothScroll('events')}>Events</Nav.Item> */}
         <Nav.Item eventKey="events" onClick={()=>navigate('/events')}>Events</Nav.Item>
-        <Nav.Item eventKey="gallery" onClick={()=>navigate('/gallery')}>Gallery</Nav.Item>
+        <Nav.Item eventKey="objectives" onClick={()=>navigate('/objectives')}>Objectives/Activities</Nav.Item>
+        <Nav.Item eventKey="achievements">Achievements</Nav.Item>
+        <Nav.Item eventKey="awards">Awards</Nav.Item>
         <Nav.Item eventKey="exhibitors" onClick={()=>navigate('/exhibitors')}>Exhibitors</Nav.Item>
-        <Nav.Item eventKey="objectives" onClick={()=>navigate('/objectives')}>Objectives</Nav.Item>
+        <Nav.Item eventKey="gallery" onClick={()=>navigate('/gallery')}>Gallery</Nav.Item>
+        <Nav.Item eventKey="contact" onClick={()=>navigate('/contact')}>Contact Us</Nav.Item>
         <Nav.Item eventKey="services" onClick={()=>navigate('/services')}>Services</Nav.Item>
-        <Nav.Item eventKey="contact" onClick={()=>navigate('/contact')}>Contact</Nav.Item>
       </Nav>
     </VStack>
 

@@ -26,7 +26,7 @@ export default function Objectives() {
     return (
         <>
             <Box p={5} position="relative">
-                <Text
+                {/* <Text
                     position="absolute"
                     top={0}
                     left="10%"
@@ -37,39 +37,23 @@ export default function Objectives() {
                     fontSize="lg"
                 >
                     Awareness Creation
-                </Text>
+                </Text> */}
                 <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
-                    <Flex flex={1} borderRadius="0">
-                        <Image
-                            p={5}
-                            alt={'Formation Image'}
-                            objectFit={'fit'}
-                            src={'https://preview.redd.it/fl6ax0n1o7961.jpg?auto=webp&s=0b1e463b674b13d8f4ea2876f29f51f883b9fc61'}
-                            width="100%"
-                            height="600px"
-                            borderRadius={0}
-                        />
-                    </Flex>
+
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
-                        <Stack spacing={6} w={'full'} maxW={'lg'}>
-                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '4xl' }}>
+                        <Stack spacing={6} w={'full'} >
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}>
                                 <Text
                                     as={'span'}
                                     color={'#000080'}
                                 >
-                                    Awareness Creation
+                                    Create awareness among the members on the business opportunities, industry requirements and technology trends by
                                 </Text>
                             </Heading>
-                            {/* <Text textAlign={'justify'} fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                                Formation of SIATI was on the initiative of Dr. C.G. Krishnadas Nair, then Managing Director of Hindustan Aeronautics Limited, Bangalore. SIATI was founded on 9th December 1991. On receiving the National Aeronautical Prize (constituted by Aeronautical Society of India, Aeronautics R&D Board, Ministry of Defence) for outstanding fundamental and applied work in Aeronautical Science & Technology, Dr Krishnadas Nair set apart the cash prize received for the promotion of SIATI. After discussion with a number of his colleagues in the Aerospace industry, and R&D, SIATI was founded complimentary to Aeronautical Society of India to give focused attention to the growth of aerospace industry through private industry participation, MSME networking with Large Private Industries & PSUs as well as Industry – R&D co-operation and International Co-operation.
-                            </Text> */}
                             <Box
                                 height="100%"
-                                // borderWidth="1px"
-                                // borderRadius="lg"
                                 overflow="hidden"
                                 p={4}
-                            // boxShadow="md"
                             >
                                 {[
                                     "Relevant conferences, seminars and conventions that SIATI conducts on a regular basis.",
@@ -93,7 +77,7 @@ export default function Objectives() {
                 </Stack>
             </Box>
 
-            <Box p={5} position="relative">
+            {/* <Box p={5} position="relative">
                 <Text
                     position="absolute"
                     top={0}
@@ -319,7 +303,157 @@ export default function Objectives() {
                         </Stack>
                     </Flex>
                 </Stack>
+            </Box> */}
+
+            <Box p={5} position="relative">
+                <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
+
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} >
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'blue.400'}
+                                >
+                                    Showcase the collective strength in terms of capabilities, products and services of Indian Aerospace companies in the domestic and international forums by
+                                </Text>
+                            </Heading>
+                            <Box
+                                height="100%"
+                                overflow="hidden"
+                                p={4}
+                            >
+                                {[
+                                    "Taking SIATI members as Indian delegation to international aerospace events like air shows, technology congress, conferences etc.",
+                                    "Organizing India Pavilion in major domestic and international Air shows for SIATI members to display their products and capabilities at reasonable rates.",
+                                    "Publishing SIATI Aerospace Directory which carries the details of SIATI member companies for agencies looking for products and services to find them easily.",
+                                    "By giving necessary details of SIATI members in SIATI web site to get noticed by those who would like to do business with Indian Aerospace companies, source products and services or tie up with Indian companies etc.",
+                                    "Facilitate International Co-operations.",
+                                    "Publishing Aeromag - Bimonthly Journal dedicate to Aerospace address.",
+                                ].map((item, index) => (
+                                    <HStack key={index} spacing={2} mb={2} alignItems="center">
+                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Text color={'gray.500'} fontSize="md">
+                                            {item}
+                                        </Text>
+                                    </HStack>
+                                ))}
+                            </Box>
+                        </Stack>
+                    </Flex>
+                </Stack>
             </Box>
+
+            <Box p={5} position="relative">
+                <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
+
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} >
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'#000080'}
+                                >
+                                    Effectively represent the Indian Aerospace Industry in all appropriate forums for its healthy growth by
+                                </Text>
+                            </Heading>
+                            <Box
+                                height="100%"
+                                overflow="hidden"
+                                p={4}
+                            >
+                                {[
+                                    "Organizing interactions and deliberations between Government bodies, policy makers, regulatory authorities and controlling agencies for SIATI members to bring their concerns, problems & suggestions.",
+                                    "Providing inputs to Ministry of Civil aviation, Ministry of Defence, DGCA, DGAQA, CEMILAC etc regarding policies on Procurement, Offset, R&D etc. and also by SIATI representation in Government constituted committees and expert bodies, as well as through SIATI’s Member Empowerment Committees.",
+                                ].map((item, index) => (
+                                    <HStack key={index} spacing={2} mb={2} alignItems="center">
+                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Text color={'gray.500'} fontSize="md">
+                                            {item}
+                                        </Text>
+                                    </HStack>
+                                ))}
+                            </Box>
+                        </Stack>
+                    </Flex>
+                </Stack>
+            </Box>
+
+            <Box p={5} position="relative">
+                <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
+
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} >
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'blue.400'}
+                                >
+                                    R&D, Academia – Industry Interaction, Training & Skill development
+                                </Text>
+                            </Heading>
+                            <Box
+                                height="100%"
+                                overflow="hidden"
+                                p={4}
+                            >
+                                {[
+                                    "Organising Interactive seminars and workshops for SIATI members with R&D organizations and Educational / Training Institutes.",
+                                    "Promote R&D for development of aerospace materials, components and systems with relevant technologies through member industries and their collaboration with R&D laboratories, academic institutions and Design and Production departments of DPSUs and other Customers.",
+                                    "Conducting on a ‘need basis’ training & skill development programs in Materials, Processes, Design, Testing, Manufacture, Quality Assurance, Customer support, Maintenance, IT Tools and Technique etc., and Effective Management.",
+                                    "Organizing workshops and training programs for Quality Certifications like ASA9100, DGAQA, and CEMILAC certifications.",
+                                    "Encourage and support educational institutions and Universities to offer courses in Aerospace.",
+                                    "Assist graduates in further training and skill development through Projects with Industries.",
+                                    "Institute SIATI Awards and scholarship for students."
+                                ].map((item, index) => (
+                                    <HStack key={index} spacing={2} mb={2} alignItems="center">
+                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Text color={'gray.500'} fontSize="md">
+                                            {item}
+                                        </Text>
+                                    </HStack>
+                                ))}
+                            </Box>
+                        </Stack>
+                    </Flex>
+                </Stack>
+            </Box>
+
+            <Box p={5} position="relative">
+                <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
+
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} >
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'#000080'}
+                                >
+                                    Encouraging & Promoting Indigenous Development through SIATI AWARDS
+                                </Text>
+                            </Heading>
+                            <Box
+                                height="100%"
+                                overflow="hidden"
+                                p={4}
+                            >
+                                {[
+                                    `SIATI has instituted the "SIATI Annual Awards" for ‘Excellence in Aerospace Indigenization’ to encourage & promote indigenization of aerospace components, equipment and systems.`,
+                                    "SIATI recommend deserving individuals and Organizations for National Awards.",
+                                ].map((item, index) => (
+                                    <HStack key={index} spacing={2} mb={2} alignItems="center">
+                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Text color={'gray.500'} fontSize="md">
+                                            {item}
+                                        </Text>
+                                    </HStack>
+                                ))}
+                            </Box>
+                        </Stack>
+                    </Flex>
+                </Stack>
+            </Box>
+
         </>
     );
 }

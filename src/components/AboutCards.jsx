@@ -230,7 +230,7 @@ export default function AboutCards() {
                                 p={5}
                                 objectFit={'fit'}
                                 src={nairImg}
-                                width="40%"
+                                width="30%"
                                 height="30%"
                                 borderRadius={0}
                             />
