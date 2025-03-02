@@ -230,8 +230,8 @@ export default function AboutCards() {
                                 p={5}
                                 objectFit={'fit'}
                                 src={nairImg}
-                                width="30%"
-                                height="30%"
+                                width="25%"
+                                height="25%"
                                 borderRadius={0}
                             />
                             <Box p={5}>

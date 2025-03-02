@@ -60,8 +60,8 @@ const Navbar = ({ active, onSelect, scrollToRef, ...props }) => {
       {/* <Nav.Item className='navmenu' eventKey="events" onClick={()=>handleSmoothScroll('events')}>Events</Nav.Item> */}
       <Nav.Item className='navmenu' eventKey="events" onClick={()=>navigate('/events')}>Events</Nav.Item>
       <Nav.Item className='navmenu' eventKey="objectives" onClick={()=>navigate('/objectives')}>Objectives/Activities</Nav.Item>
-      <Nav.Item className='navmenu' eventKey="achievements" >Achievements</Nav.Item>
-      <Nav.Item className='navmenu' eventKey="awards" >Awards</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="achievements" onClick={()=>navigate('/achievements')}>Achievements</Nav.Item>
+      <Nav.Item className='navmenu' eventKey="awards" onClick={()=>navigate('/awards')}>Awards</Nav.Item>
       <Nav.Item className='navmenu' eventKey="exhibitors" onClick={()=>navigate('/exhibitors')}>Exhibitors</Nav.Item>
       <Nav.Item className='navmenu' eventKey="gallery" onClick={()=>navigate('/gallery')}>Gallery</Nav.Item>
       {/* <Nav.Item className='navmenu' eventKey="contact" onClick={() => handleScrollToRef('contact')}>Contact</Nav.Item> */}
@@ -117,7 +117,7 @@ const MobileNavbar = ({ active, onSelect, scrollToRef, ...props }) => {
         {/* <Nav.Item eventKey="events" onClick={()=>handleSmoothScroll('events')}>Events</Nav.Item> */}
         <Nav.Item eventKey="events" onClick={()=>navigate('/events')}>Events</Nav.Item>
         <Nav.Item eventKey="objectives" onClick={()=>navigate('/objectives')}>Objectives/Activities</Nav.Item>
-        <Nav.Item eventKey="achievements">Achievements</Nav.Item>
+        <Nav.Item eventKey="achievements" onClick={()=>navigate('/achievements')}>Achievements</Nav.Item>
         <Nav.Item eventKey="awards">Awards</Nav.Item>
         <Nav.Item eventKey="exhibitors" onClick={()=>navigate('/exhibitors')}>Exhibitors</Nav.Item>
         <Nav.Item eventKey="gallery" onClick={()=>navigate('/gallery')}>Gallery</Nav.Item>
@@ -145,6 +145,8 @@ function HeaderComp({ scrollToRef }) {
     else if (path === '/management') setActive('managing');
     else if (path === '/trustees') setActive('managing');
     else if (path === '/contact') setActive('contact');
+    else if (path === '/achievements') setActive('achievements');
+    else if (path === '/awards') setActive('awards');
     else if (path === '/exhibitors') setActive('exhibitors');
     else if (path === '/services') setActive('services');
     else if (path === '/pastevents') setActive('events');

@@ -15,6 +15,7 @@ import formationImg from '../assets/formation.jpg';
 import quoteImg from '../assets/Quote.jpg'
 import mgkMenon from '../assets/mgkmenon.jpg';
 import mgkMenon2 from '../assets/menon_mgk.jpg';
+import { CgArrowLongRightC } from "react-icons/cg";
 
 import { useState } from 'react';
 import './About.css';
@@ -444,6 +445,49 @@ export default function Objectives() {
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
                                         <MdOutlineDoubleArrow fontSize={'lg'} />
                                         <Text color={'gray.500'} fontSize="md">
+                                            {item}
+                                        </Text>
+                                    </HStack>
+                                ))}
+                            </Box>
+                        </Stack>
+                    </Flex>
+                </Stack>
+            </Box>
+
+            <Box p={5} position="relative">
+                <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
+
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} >
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'blue.400'}
+                                >
+                                    Activities
+                                </Text>
+                            </Heading>
+                            <Box
+                                height="100%"
+                                overflow="hidden"
+                                p={4}
+                            >
+                                {[
+                                    `Achieving greater ‘Self Reliance’ in technology, product and services in the aerospace sector through indigenous development and international cooperation’.`,
+                                    `Organizing Industry , Academy and R&D interactions, MSMEs and PSU / DPSU and large Private sector interactions for effective networking of aerospace industries.`,
+                                    `Encouraging R&D, innovations, product/ process development through “SIATI Awards for Excellence” in indigenous development of aerospace technology and manufacture of aerospace material, components, equipments and systems etc.`,
+                                    `Conducting Seminars and Workshops for the development of aerospace materials, equipment, structures, etc and to have direct industry interaction.`,
+                                    `Development of human resource through skill development and quality technical education, apprentice / graduate training and student scholarships.`,
+                                    `Interacting with Global Aerospace Industries and industry Associations of different countries for international cooperation.`,
+                                    `Participating in Air Shows and other international events along with member industries. showcasing the collective strength in terms of capabilities, products and services of Indian Aerospace companies in the domestic and international forums.`,
+                                    `Conducting workshops and seminars on Indian and global sourcing requirements of aerospace products and services and catalyze development of sustainable supply chain management.`,
+                                    `Providing inputs to Government committees, policy makers and regulatory authorities on policies, procedures and eco systems conducive for growth of aerospace industries in India.`,
+                                    `Associate and support publications such as Aerospace Directory, Books, Journals / News letters etc in Aerospace and Aviation.`
+                                ].map((item, index) => (
+                                    <HStack key={index} spacing={2} mb={2} alignItems="center">
+                                        <CgArrowLongRightC  fontSize={'lg'} />
+                                        <Text fontStyle={'italic'} color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
                                     </HStack>

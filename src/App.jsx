@@ -31,6 +31,8 @@ import PromotionDetail from './pages/PromotionDetail';
 import Exhibitors from './pages/Exhibitors';
 import ExhibitorsNew from './pages/ExhibitorsNew';
 import AdminExihibitors from './pages/admin/ViewExhibitors';
+import Awards from './pages/Awards';
+import Achievements from './pages/Achievements';
 // import './App.css'
 
 function App() {
@@ -56,6 +58,20 @@ function App() {
           element={
             <Title title={'Events | Siati'}>
               <Events />
+            </Title>
+          } />
+        <Route
+          path='/awards'
+          element={
+            <Title title={'Awards | Siati'}>
+              <Awards/>
+            </Title>
+          } />
+          <Route
+          path='/achievements'
+          element={
+            <Title title={'Awards | Siati'}>
+              <Achievements/>
             </Title>
           } />
         <Route
@@ -244,7 +260,7 @@ function App() {
               </Auth>
             </Title>
           } />
-          <Route
+        <Route
           path='/admin/exhibitors'
           element={
             <Title title={'Siati'}>
