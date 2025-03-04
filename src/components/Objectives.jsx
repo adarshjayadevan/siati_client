@@ -486,7 +486,7 @@ export default function Objectives() {
                                     `Associate and support publications such as Aerospace Directory, Books, Journals / News letters etc in Aerospace and Aviation.`
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <CgArrowLongRightC  fontSize={'lg'} />
+                                        <MdOutlineDoubleArrow  fontSize={'lg'} />
                                         <Text fontStyle={'italic'} color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
