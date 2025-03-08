@@ -25,6 +25,14 @@ import naresh from '../assets/trustees/naresh.jpg';
 import vaidya from '../assets/trustees/vaidya.jpg';
 import jagdish from '../assets/trustees/jagdish.jpg';
 import skjhaImg from '../assets/skjha.jpg';
+import jayakrishnan from '../assets/trustees/jayakrishnan.jpg';
+import Pashilkar from '../assets/trustees/Pashilkar.jpg';
+import Satyanarayana from '../assets/trustees/Satyanarayana.jpg';
+import Arun_Choudhary from '../assets/trustees/Arun_Choudhary.jpg';
+import Behramkamdin from '../assets/trustees/Behramkamdin.jpg';
+import Sanjay_Chawla from '../assets/trustees/Sanjay_Chawla.jpg';
+import Bramhane from '../assets/trustees/Bramhane.jpg';
+import Deepak_Bansal from '../assets/trustees/Deepak_Bansal.jpg';
 import { Divider } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 
@@ -62,12 +70,12 @@ function Trustees({ scrollToRef }) {
         {
             name: "Mr. S Jayakrishnan",
             position: "CEO (BC), HAL",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: jayakrishnan
         },
         {
             name: "Dr. A. Pashilkar",
             position: "Director CSIR-NAL",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Pashilkar
         },
         // {
         //     name: "Dr. Girish S Deodhare",
@@ -87,7 +95,7 @@ function Trustees({ scrollToRef }) {
         {
             name: "Mr. M Satyanarayana",
             position: "CEO (AC), HAL",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Satyanarayana
         },
         // {
         //     name: "Mr. Amitab Bhatt",
@@ -97,7 +105,7 @@ function Trustees({ scrollToRef }) {
         {
             name: "Mr. Arun Chaudhary",
             position: "Director-DIITM, DRDO",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Arun_Choudhary
         },
         // {
         //     name: "Dr Mayank Dwivedi",
@@ -137,7 +145,7 @@ function Trustees({ scrollToRef }) {
         {
             name: "Mr. M. Behramkamdin",
             position: "Sr VP-Godrej Aerospace",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Behramkamdin
         },
         // {
         //     name: "Mr. S.M.Vaidya",
@@ -152,17 +160,17 @@ function Trustees({ scrollToRef }) {
         {
             name: "Mr. Sanjay Chawla",
             position: "DG DGAQA",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Sanjay_Chawla
         },
         {
             name: "Mr. S.K. Bramhane",
             position: "Dy DGCA (SZ)",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Bramhane
         },
         {
             name: "R Adm Deepak Bansal VSM (Retd)",
             position: "Former ACNS (AM)",
-            img: 'https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?semt=ais_hybrid'
+            img: Deepak_Bansal
         },
         {
             name: "Shri SK Jha",
@@ -318,7 +326,7 @@ function Trustees({ scrollToRef }) {
                 </Grid>
             </Box>
 
-            <Flex p={5} justify="center" mt={8}>
+            {/* <Flex p={5} justify="center" mt={8}>
                 <Button
                     marginInline={2}
                     width={'200px'}
@@ -372,7 +380,7 @@ function Trustees({ scrollToRef }) {
                 </Button>
 
                 <Divider />
-            </Flex>
+            </Flex> */}
 
             <Box mt="auto" w="100%">
                 <Footer />

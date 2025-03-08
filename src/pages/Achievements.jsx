@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Header from '../components/Home/Header';
-import { Box, Flex, Grid, Heading, Button, Stack, HStack, Text  } from '@chakra-ui/react';
+import { Box, Flex, Grid, Heading, Button, Stack, HStack, Text } from '@chakra-ui/react';
 import { Panel } from 'rsuite';
 import Footer from '../components/Home/Footer';
 import { FaCalendarAlt } from "react-icons/fa";
@@ -74,7 +74,9 @@ function Achievements({ scrollToRef }) {
                                         `Workshop / Seminar/ Short Courses:  SIATI has organised several Workshops and Seminar on the subject related to aerospace industries with a good attendance by them. SIATI along with Jain University conducted short courses on relevant subjects for the benefit of`
                                     ].map((item, index) => (
                                         <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                            <MdOutlineDoubleArrow fontSize={'lg'} />
+                                            <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                                <MdOutlineDoubleArrow className="outline-arrow" fontSize="20px" />
+                                            </Box>
                                             <Text color={'gray.500'} fontSize="md">
                                                 {item}
                                             </Text>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Header from '../components/Home/Header';
 import { Box, Flex, Grid, Heading, Button } from '@chakra-ui/react';
-import { List, VStack, Pagination } from 'rsuite';
+import { List, VStack, Pagination, Divider } from 'rsuite';
 import Footer from '../components/Home/Footer';
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -34,7 +34,7 @@ function News({ scrollToRef }) {
         await axios.get(`${import.meta.env.VITE_API_URL}/pastevents/${activePage}`).then(res => {
             setEvents(res.data.data);
             debugger
-            setTotalItems(res.data.totalPages*limit);
+            setTotalItems(res.data.totalPages * limit);
             setLoader(false);
         }).catch(err => {
             console.log(err);
@@ -90,7 +90,7 @@ function News({ scrollToRef }) {
                                         <VStack>
                                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                                 <MdEmojiEvents style={{ fontSize: 'large', color: '#000080' }} />
-                                                <h4 className='past-events-header' onClick={()=>navigate(`/event/${elem.eventId}`)} style={{ marginLeft: '4px' }}>{elem.event}</h4>
+                                                <h4 className='past-events-header' onClick={() => navigate(`/event/${elem.eventId}`)} style={{ marginLeft: '4px' }}>{elem.event}</h4>
                                             </div>
                                             <div className='event-calender'>
                                                 <FaCalendarAlt className='event-calendericon' />
@@ -119,6 +119,63 @@ function News({ scrollToRef }) {
                                 onChangePage={setActivePage}
                             />
                         </Box>
+
+                        <Flex justify="center" mt={3}>
+                            <Button
+                                marginInline={5}
+                                marginBottom={10}
+                                width={'200px'}
+                                color={'#000080'}
+                                _hover={{
+                                    _before: {
+                                        content: '""',
+                                        position: "absolute",
+                                        width: "0%",
+                                        height: "2px",
+                                        bottom: 0,
+                                        left: 0,
+                                        backgroundColor: "currentColor",
+                                        transition: "width 0.3s ease-in-out",
+                                    },
+                                    _after: {
+                                        content: '""',
+                                        position: "absolute",
+                                        width: "100%",
+                                        height: "2px",
+                                        bottom: 0,
+                                        left: 0,
+                                        backgroundColor: "currentColor",
+                                        transition: "width 0.3s ease-in-out",
+                                    },
+                                }}
+                                position="relative"
+                                _before={{
+                                    content: '""',
+                                    position: "absolute",
+                                    width: "0%",
+                                    height: "2px",
+                                    bottom: 0,
+                                    left: 0,
+                                    backgroundColor: "currentColor",
+                                    transition: "width 0.3s ease-in-out",
+                                }}
+                                _after={{
+                                    content: '""',
+                                    position: "absolute",
+                                    width: "0%",
+                                    height: "2px",
+                                    bottom: 0,
+                                    left: 0,
+                                    backgroundColor: "currentColor",
+                                    transition: "width 0.3s ease-in-out",
+                                }}
+                                onClick={() => navigate('/events')}
+                            >
+                                Go Back
+                            </Button>
+
+                            <Divider />
+                        </Flex>
                     </>
                 }
 

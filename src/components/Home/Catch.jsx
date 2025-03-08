@@ -40,6 +40,7 @@ import bannerImg6 from '../../assets/banner/6.jpg';
 import bannerImg7 from '../../assets/banner/7.jpg';
 import lcaImg from '../../assets/banner/LCA.jpg';
 import suImg from '../../assets/banner/sukhoi-su-mki.jpg';
+import sukhoi from '../../assets/banner/Sukhoi.jpg';
 import './Carousal.css';
 
 const ResponsiveBanner = () => {
@@ -87,7 +88,7 @@ const ResponsiveBanner = () => {
           <img src={bannerImg2} height={300} />
           {/* <img src={bannerImg5} height={300} /> */}
           <img src={lcaImg} height={300} />
-          <img src={suImg} height={300} />
+          <img src={sukhoi} height={300} />
           <img src={bannerImg6} height={300} />
           <img src={bannerImg7} height={300} />
         </Carousel>

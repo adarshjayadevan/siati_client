@@ -18,7 +18,8 @@ function Events({ scrollToRef }) {
   const [loader, setLoader] = useState(false);
 
 
-  const [allEvents, setAllEvents] = useState([])
+  const [allEvents, setAllEvents] = useState([]);
+  const [airShows, setAirShows] = useState([])
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -27,7 +28,7 @@ function Events({ scrollToRef }) {
 
   async function upcoming_events() {
     setLoader(true);
-    await axios.get(`${import.meta.env.VITE_API_URL}/upcomingevents`).then(res => {
+    await axios.get(`${import.meta.env.VITE_API_URL}/upcomingeventsinner`).then(res => {
       setAllEvents(res.data.data);
       setLoader(false);
     }).catch(err => {
@@ -78,10 +79,14 @@ function Events({ scrollToRef }) {
         </Box> : <>
 
           <Box p={8}>
+            <Box marginLeft={'5%'} borderTop="2px solid" borderColor="blue.500" width="fit-content">
+              <Heading className='home_events_heading' mb={6}>Seminars / Conferences</Heading>
+            </Box>
             <Grid
               templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
               gap={6}
             >
+
               {allEvents.map((elem, index) => (
                 <Box
                   key={index}
@@ -121,7 +126,7 @@ function Events({ scrollToRef }) {
                     >
                       <div className='event-calender'>
                         <FaCalendarAlt className='event-calendericon' />
-                        {elem?.startDate!=elem?.endDate?<p className='event-date'>{elem?.date}</p>:<p className='event-date'>{elem?.startDate}</p>}
+                        {elem?.startDate != elem?.endDate ? <p className='event-date'>{elem?.date}</p> : <p className='event-date'>{elem?.startDate}</p>}
                       </div>
                       <div className='event-calender'>
                         <FaLocationDot className='event-calendericon' />
@@ -132,6 +137,69 @@ function Events({ scrollToRef }) {
                 </Box>
               ))}
             </Grid>
+          </Box>
+
+          {/* Air shows */}
+          <Box p={8}>
+            <Box marginLeft={'5%'} borderTop="2px solid" borderColor="blue.500" width="fit-content">
+              <Heading className='home_events_heading' mb={6}>Air / Trade Shows</Heading>
+            </Box>
+            <Grid
+              templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
+              gap={6}
+            >
+{/* Add space for one row if there is empty array */}
+              {airShows.map((elem, index) => (
+                <Box
+                  key={index}
+                  position="relative"
+                  padding={4}
+                >
+                  {elem?.image ? (
+                    <Image
+                      src={elem.image}
+                      style={{ height: '200px', width: '100%', objectFit: 'cover' }}
+                    />
+                  ) : (
+                    <Box boxShadow={'md'} style={{ height: '200px', width: '100%' }}></Box>
+                  )}
+                  <Box
+                    position="absolute"
+                    top="0"
+                    right="0"
+                    m={2}
+                    p={2}
+                    // backgroundColor="rgba(0, 0, 0, 0.5)"
+                    backgroundColor={'blue.400'}
+                    color="white"
+                    borderRadius="md"
+                    textAlign="center"
+                  >
+                    <Box fontSize="lg" fontWeight="bold">
+                      {elem?.startDate?.slice(0, 3)}
+                    </Box>
+                    <Box fontSize="sm">
+                      {/* {elem?.startDate?.slice(4, 6)?.split(',')[0]} */}
+                    </Box>
+                  </Box>
+                  <Panel bodyFill style={{ height: '100%' }}>
+                    <Panel className='event-heading' header={elem?.event}
+                      onClick={() => navigate(`/event/${elem?.eventId}`)}
+                    >
+                      <div className='event-calender'>
+                        <FaCalendarAlt className='event-calendericon' />
+                        {elem?.startDate != elem?.endDate ? <p className='event-date'>{elem?.date}</p> : <p className='event-date'>{elem?.startDate}</p>}
+                      </div>
+                      <div className='event-calender'>
+                        <FaLocationDot className='event-calendericon' />
+                        <p className='event-date'>{elem?.location}</p>
+                      </div>
+                    </Panel>
+                  </Panel>
+                </Box>
+              ))}
+            </Grid>
+            {airShows.length==0&&<Box height={'200px'}></Box>}
           </Box>
 
           <Flex justify="center" mt={3}>

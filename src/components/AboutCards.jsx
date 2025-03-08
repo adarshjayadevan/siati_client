@@ -95,17 +95,7 @@ export default function AboutCards() {
                             </Text> */}
                             <Text textAlign="justify" fontSize={{ base: 'md', lg: 'lg' }} color="gray.500">
                                 Formation of SIATI was on the initiative of Dr. C.G. Krishnadas Nair, then Managing Director of Hindustan Aeronautics Limited, Bangalore. SIATI was founded on 9th December 1991.
-                                {!isExpanded && (
-                                    <>
-                                        ...{' '}
-                                        <Button onClick={toggleExpand} variant="link" color="blue.400" fontSize={{ base: 'md', lg: 'lg' }}>
-                                            Read More
-                                        </Button>
-                                    </>
-                                )}
-                                {isExpanded && (
-                                    <>
-                                        &nbsp;On receiving the National Aeronautical
+                                On receiving the National Aeronautical
                                         Prize (constituted by Aeronautical Society of
                                         India, Aeronautics R&D Board, Ministry of
                                         Defence) for outstanding fundamental and
@@ -117,12 +107,6 @@ export default function AboutCards() {
                                         founded complimentary to Aeronautical Society
                                         of India to give focused attention to the growth of aerospace industry through private industry participation, MSME networking with Large Private Industries & PSUs as well as Industry – R&D co-operation and International Co-
                                         operation.
-                                        {' '}
-                                        <Button onClick={toggleExpand} variant="link" color="blue.400" fontSize={{ base: 'md', lg: 'lg' }}>
-                                            See less
-                                        </Button>
-                                    </>
-                                )}
                             </Text>
                             {/* <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                                 <Button

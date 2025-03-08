@@ -8,6 +8,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react'
 import { FaInstagram, FaTwitter, FaYoutube, FaMapMarkerAlt, FaLinkedin  } from 'react-icons/fa'
+import { FaXTwitter } from "react-icons/fa6";
 import { Modal } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import { ReactNode, useState } from 'react';
@@ -108,13 +109,22 @@ export default function SmallCentered() {
           align={{ base: 'center', md: 'center' }}>
           <Text>© {new Date().getFullYear()} All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'https://x.com/isro'} target="_blank">
-              <FaTwitter />
+            <SocialButton label={'Twitter'} 
+            // href={'javascript.void(0)'} 
+            // target="_blank"
+            >
+              <FaXTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'https://www.youtube.com/watch?v=Hw1PVr65iok'} target="_blank">
+            <SocialButton label={'YouTube'} 
+            // href={'https://www.youtube.com/watch?v=Hw1PVr65iok'} 
+            // target="_blank"
+            >
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'https://www.youtube.com/watch?v=Hw1PVr65iok'} target="_blank">
+            <SocialButton label={'Instagram'} 
+            // href={'https://www.youtube.com/watch?v=Hw1PVr65iok'} 
+            // target="_blank"
+            >
               <FaLinkedin />
             </SocialButton>
 

@@ -578,7 +578,7 @@ function MembershipForm({ scrollToRef }) {
                     </Form.Group> */}
 
                     <Box mt="4">
-                        <Form.ControlLabel>Membership Fee</Form.ControlLabel>
+                        {/* <Form.ControlLabel>Membership Fee</Form.ControlLabel> */}
                         <Table variant="striped">
                             <Thead>
                                 <Tr >

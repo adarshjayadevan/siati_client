@@ -24,3 +24,7 @@
     align-items: center !important; */
     margin-inline: auto;
   }
+  
+  .outline-arrow{
+    font-size: small !important;
+  }

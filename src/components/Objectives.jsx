@@ -48,7 +48,7 @@ export default function Objectives() {
                                     as={'span'}
                                     color={'#000080'}
                                 >
-                                    Create awareness among the members on the business opportunities, industry requirements and technology trends by
+                                    1.Create awareness among the members on the business opportunities, industry requirements and technology trends by
                                 </Text>
                             </Heading>
                             <Box
@@ -66,7 +66,9 @@ export default function Objectives() {
                                     "Creating a platform for developing a consortium to share expertise and costly processing facilities to facilitate enhanced sourcing from India."
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                            <MdOutlineDoubleArrow className="outline-arrow" />
+                                        </Box>
                                         <Text color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
@@ -316,7 +318,7 @@ export default function Objectives() {
                                     as={'span'}
                                     color={'blue.400'}
                                 >
-                                    Showcase the collective strength in terms of capabilities, products and services of Indian Aerospace companies in the domestic and international forums by
+                                    2.Showcase the collective strength in terms of capabilities, products and services of Indian Aerospace companies in the domestic and international forums by
                                 </Text>
                             </Heading>
                             <Box
@@ -333,7 +335,9 @@ export default function Objectives() {
                                     "Publishing Aeromag - Bimonthly Journal dedicate to Aerospace address.",
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                            <MdOutlineDoubleArrow className="outline-arrow" />
+                                        </Box>
                                         <Text color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
@@ -355,7 +359,7 @@ export default function Objectives() {
                                     as={'span'}
                                     color={'#000080'}
                                 >
-                                    Effectively represent the Indian Aerospace Industry in all appropriate forums for its healthy growth by
+                                    3.Effectively represent the Indian Aerospace Industry in all appropriate forums for its healthy growth by
                                 </Text>
                             </Heading>
                             <Box
@@ -368,7 +372,9 @@ export default function Objectives() {
                                     "Providing inputs to Ministry of Civil aviation, Ministry of Defence, DGCA, DGAQA, CEMILAC etc regarding policies on Procurement, Offset, R&D etc. and also by SIATI representation in Government constituted committees and expert bodies, as well as through SIATI’s Member Empowerment Committees.",
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                            <MdOutlineDoubleArrow className="outline-arrow" />
+                                        </Box>
                                         <Text color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
@@ -390,7 +396,7 @@ export default function Objectives() {
                                     as={'span'}
                                     color={'blue.400'}
                                 >
-                                    R&D, Academia – Industry Interaction, Training & Skill development
+                                    4.R&D, Academia – Industry Interaction, Training & Skill development
                                 </Text>
                             </Heading>
                             <Box
@@ -408,7 +414,9 @@ export default function Objectives() {
                                     "Institute SIATI Awards and scholarship for students."
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                            <MdOutlineDoubleArrow className="outline-arrow" />
+                                        </Box>
                                         <Text color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
@@ -430,7 +438,7 @@ export default function Objectives() {
                                     as={'span'}
                                     color={'#000080'}
                                 >
-                                    Encouraging & Promoting Indigenous Development through SIATI AWARDS
+                                    5.Encouraging & Promoting Indigenous Development through SIATI AWARDS
                                 </Text>
                             </Heading>
                             <Box
@@ -443,7 +451,9 @@ export default function Objectives() {
                                     "SIATI recommend deserving individuals and Organizations for National Awards.",
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <MdOutlineDoubleArrow fontSize={'lg'} />
+                                        <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                            <MdOutlineDoubleArrow className="outline-arrow" />
+                                        </Box>
                                         <Text color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
@@ -486,7 +496,9 @@ export default function Objectives() {
                                     `Associate and support publications such as Aerospace Directory, Books, Journals / News letters etc in Aerospace and Aviation.`
                                 ].map((item, index) => (
                                     <HStack key={index} spacing={2} mb={2} alignItems="center">
-                                        <MdOutlineDoubleArrow  fontSize={'lg'} />
+                                        <Box width="20px" flexShrink={0} display="flex" justifyContent="center">
+                                            <MdOutlineDoubleArrow className="outline-arrow" />
+                                        </Box>
                                         <Text fontStyle={'italic'} color={'gray.500'} fontSize="md">
                                             {item}
                                         </Text>
