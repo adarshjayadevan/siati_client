@@ -91,7 +91,7 @@ function NewsDetail({ scrollToRef }) {
                         </Box>
                     </Flex>
 
-                    <Box px={'10rem'} paddingTop={'2rem'} color={'#000080'}>
+                    <Box px={'10rem'}  color={'#000080'}>
                         {/* <Text fontSize={'large'} py={5} textAlign={'justify'}
                         // dangerouslySetInnerHTML={{ __html: addLineBreaks(`${news.location} : ${news.description}`) }}
                         >

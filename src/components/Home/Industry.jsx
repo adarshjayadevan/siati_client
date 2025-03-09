@@ -21,6 +21,7 @@ function Slider() {
     async function upcoming_events() {
         setLoader(true);
         await axios.get(`${import.meta.env.VITE_API_URL}/recentnews`).then(res => {
+            debugger
             setNews(res.data.data);
             setLoader(false);
         }).catch(err => {
@@ -56,25 +57,36 @@ function Slider() {
     //                 p={1}
     //                 w={{ base: '80%', md: '30%' }}
     //                 onClick={() => {
-    //                     if(news[index]?.location?.split('_')[1]){
-    //                         navigate(`/promotions/${news[index]?.newsId}`)
-    //                     }else{
-    //                         navigate(`/news/${news[index]?.newsId}`)
-    //                     }   
+    //                     if (news[index]?.location?.split('_')[1]) {
+    //                         navigate(`/promotions/${news[index]?.newsId}`);
+    //                     } else {
+    //                         navigate(`/news/${news[index]?.newsId}`);
+    //                     }
     //                 }}
     //                 position={'relative'}
     //             >
     //                 <Panel key={index} shaded bordered bodyFill>
-    //                     <Box
-    //                         as="img"
-    //                         src={news[index]?.image}
-    //                         style={{
-    //                             height: '300px',
-    //                             width: '100%',
-    //                             objectFit: 'cover',
-    //                             borderRadius: '0px',
-    //                         }}
-    //                     />
+    //                     {news[index]?.image ? (
+    //                         <Box
+    //                             as="img"
+    //                             src={news[index]?.image}
+    //                             style={{
+    //                                 height: '300px',
+    //                                 width: '100%',
+    //                                 objectFit: 'cover',
+    //                                 borderRadius: '0px',
+    //                             }}
+    //                         />
+    //                     ) : (
+    //                         <Box
+    //                             style={{
+    //                                 height: '300px',
+    //                                 width: '100%',
+    //                                 backgroundColor: '#fff', 
+    //                                 borderRadius: '0px',
+    //                             }}
+    //                         ></Box>
+    //                     )}
     //                     <Box
     //                         position="absolute"
     //                         top="0"
@@ -86,8 +98,13 @@ function Slider() {
     //                         borderRadius="md"
     //                         textAlign="center"
     //                     >
+                         
     //                     </Box>
-    //                     <Panel className='promotions_header' header={news[index]?.title} style={{ marginTop: '8px' }}>
+    //                     <Panel
+    //                         className="promotions_header"
+    //                         header={news[index]?.title}
+    //                         style={{ marginTop: '8px' }}
+    //                     >
     //                     </Panel>
     //                 </Panel>
     //             </Box>
@@ -99,31 +116,32 @@ function Slider() {
     const getVisibleItems = () => {
         const items = [];
         for (let i = 0; i < visiblePanels; i++) {
-            const index = (activeIndex + i) % news.length;
+            const newsItem = news[i]; // Do not use modulus (%), just index directly
+    
             items.push(
                 <Box
-                    key={index}
+                    key={i}
                     _hover={{
-                        cursor: 'pointer',
-                        transform: 'scale(1.05)',
+                        cursor: newsItem ? 'pointer' : 'default',
+                        transform: newsItem ? 'scale(1.05)' : 'none',
                         transition: 'transform 0.3s ease-in-out',
                     }}
                     p={1}
                     w={{ base: '80%', md: '30%' }}
                     onClick={() => {
-                        if (news[index]?.location?.split('_')[1]) {
-                            navigate(`/promotions/${news[index]?.newsId}`);
-                        } else {
-                            navigate(`/news/${news[index]?.newsId}`);
+                        if (newsItem?.location?.split('_')[1]) {
+                            navigate(`/promotions/${newsItem?.newsId}`);
+                        } else if (newsItem) {
+                            navigate(`/news/${newsItem?.newsId}`);
                         }
                     }}
                     position={'relative'}
                 >
-                    <Panel key={index} shaded bordered bodyFill>
-                        {news[index]?.image ? (
+                    <Panel key={i} shaded bordered bodyFill>
+                        {newsItem ? (
                             <Box
                                 as="img"
-                                src={news[index]?.image}
+                                src={newsItem.image}
                                 style={{
                                     height: '300px',
                                     width: '100%',
@@ -136,36 +154,39 @@ function Slider() {
                                 style={{
                                     height: '300px',
                                     width: '100%',
-                                    backgroundColor: '#fff', 
+                                    backgroundColor: '#fff',
+                                    borderRadius: '0px',
+                                    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+                                }}
+                            />
+                        )}
+                        {newsItem ? (
+                            <Panel
+                                className="promotions_header"
+                                header={newsItem.title}
+                                style={{ marginTop: '8px' }}
+                            />
+                        ) : (
+                            <Panel
+                                className="promotions_header"
+                                header=""
+                                style={{
+                                    marginTop: '8px',
+                                    backgroundColor: '#f5f5f5',
+                                    textAlign: 'center',
+                                    padding: '10px',
                                     borderRadius: '0px',
                                 }}
-                            ></Box>
+                            />
                         )}
-                        <Box
-                            position="absolute"
-                            top="0"
-                            right="0"
-                            m={2}
-                            p={2}
-                            backgroundColor={'#00080'}
-                            color="white"
-                            borderRadius="md"
-                            textAlign="center"
-                        >
-                         
-                        </Box>
-                        <Panel
-                            className="promotions_header"
-                            header={news[index]?.title}
-                            style={{ marginTop: '8px' }}
-                        >
-                        </Panel>
                     </Panel>
                 </Box>
             );
         }
         return items;
     };
+    
+    
     
 
     return (
@@ -195,29 +216,6 @@ function Slider() {
                     >
                         {getVisibleItems()}
                     </Flex>
-                    {/* <Flex
-                        justify="center"
-                        align="center"
-                        mb={4}
-                        direction={{ base: 'column', md: 'row' }}
-                    >
-                        <Button
-                            onClick={handlePrev}
-                            variant="outline"
-                            size={{ base: 'sm', md: 'md' }}
-                            mr={{ md: 4 }}
-                            mb={{ base: 2, md: 0 }}
-                        >
-                            <ChevronLeftIcon />
-                        </Button>
-                        <Button
-                            onClick={handleNext}
-                            variant="outline"
-                            size={{ base: 'sm', md: 'md' }}
-                        >
-                            <ChevronRightIcon />
-                        </Button>
-                    </Flex> */}
                     <Flex justify="center" mt={8}>
                         <Button
                             marginInline={2}
