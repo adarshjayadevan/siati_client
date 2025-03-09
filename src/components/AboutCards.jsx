@@ -96,17 +96,17 @@ export default function AboutCards() {
                             <Text textAlign="justify" fontSize={{ base: 'md', lg: 'lg' }} color="gray.500">
                                 Formation of SIATI was on the initiative of Dr. C.G. Krishnadas Nair, then Managing Director of Hindustan Aeronautics Limited, Bangalore. SIATI was founded on 9th December 1991.
                                 On receiving the National Aeronautical
-                                        Prize (constituted by Aeronautical Society of
-                                        India, Aeronautics R&D Board, Ministry of
-                                        Defence) for outstanding fundamental and
-                                        applied work in Aeronautical Science &
-                                        Technology, Dr Krishnadas Nair set apart the
-                                        cash prize received for the promotion of SIATI.
-                                        After discussion with a number of his colleagues
-                                        in the Aerospace industry, and R&D, SIATI was
-                                        founded complimentary to Aeronautical Society
-                                        of India to give focused attention to the growth of aerospace industry through private industry participation, MSME networking with Large Private Industries & PSUs as well as Industry – R&D co-operation and International Co-
-                                        operation.
+                                Prize (constituted by Aeronautical Society of
+                                India, Aeronautics R&D Board, Ministry of
+                                Defence) for outstanding fundamental and
+                                applied work in Aeronautical Science &
+                                Technology, Dr Krishnadas Nair set apart the
+                                cash prize received for the promotion of SIATI.
+                                After discussion with a number of his colleagues
+                                in the Aerospace industry, and R&D, SIATI was
+                                founded complimentary to Aeronautical Society
+                                of India to give focused attention to the growth of aerospace industry through private industry participation, MSME networking with Large Private Industries & PSUs as well as Industry – R&D co-operation and International Co-
+                                operation.
                             </Text>
                             {/* <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                                 <Button
@@ -178,7 +178,7 @@ export default function AboutCards() {
                     </Flex>
                 </Stack>
             </Box> */}
-                        
+
             {/* Nair Image only*/}
 
             <Box p={5} position="relative">
@@ -196,36 +196,38 @@ export default function AboutCards() {
                 </Text>
 
                 <Box borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'}>
-                    <Box justifyItems={'center'}>
-                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                            <Text
-                                as={'span'}
-                                color={'#000080'}
-                            >
-                                Founder President
-                            </Text>{' '}
-                        </Heading>
-                    </Box>
-                    <Box borderRadius="0">
-                        <Box justifyItems={'center'} height={'100%'} width={'100%'} paddingBlock={'2rem'}>
-                            <Image
+                    <center>
+                        <Box justifyItems={'center'}>
+                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'#000080'}
+                                >
+                                    Founder President
+                                </Text>{' '}
+                            </Heading>
+                        </Box>
+                        <Box borderRadius="0">
+                            <Box justifyItems={'center'} height={'100%'} width={'100%'} paddingBlock={'2rem'}>
+                                <Image
 
-                                alt={'Formation Image'}
-                                p={5}
-                                objectFit={'fit'}
-                                src={nairImg}
-                                width="25%"
-                                height="25%"
-                                borderRadius={0}
-                            />
-                            <Box p={5}>
-                                <Heading color={'#000080'} textAlign={'center'}>Dr.C.G.Krishnadas Nair</Heading>
-                                <Text fontSize={'md'} color={'#000080'} textAlign={'center'}>Former Chairman of Hindustan Aeronautics Ltd</Text>
-                                <Text fontSize={'md'} color={'#000080'} textAlign={'center'}>is the Founder President of SIATI</Text>
-                                <Text fontSize={'md'} _hover={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={() => navigate('/presidentprofile')} color={'#000080'} textAlign={'center'}>[Click here to view profile]</Text>
+                                    alt={'Formation Image'}
+                                    p={5}
+                                    objectFit={'fit'}
+                                    src={nairImg}
+                                    width="25%"
+                                    height="25%"
+                                    borderRadius={0}
+                                />
+                                <Box p={5}>
+                                    <Heading color={'#000080'} textAlign={'center'}>Dr.C.G.Krishnadas Nair</Heading>
+                                    <Text fontSize={'md'} color={'#000080'} textAlign={'center'}>Former Chairman of Hindustan Aeronautics Ltd</Text>
+                                    <Text fontSize={'md'} color={'#000080'} textAlign={'center'}>is the Founder President of SIATI</Text>
+                                    <Text fontSize={'md'} _hover={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={() => navigate('/presidentprofile')} color={'#000080'} textAlign={'center'}>[Click here to view profile]</Text>
+                                </Box>
                             </Box>
                         </Box>
-                    </Box>
+                    </center>
 
                 </Box>
             </Box>

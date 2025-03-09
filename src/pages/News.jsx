@@ -67,7 +67,7 @@ function News({ scrollToRef }) {
                     backgroundPosition={'center center'}
                 >
                     <Heading color={'white'} p={5} flex="1">
-                        News
+                        Promotions
                     </Heading>
                 </Flex>
 

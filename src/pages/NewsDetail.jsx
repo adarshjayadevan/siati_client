@@ -77,7 +77,7 @@ function NewsDetail({ scrollToRef }) {
                         h={'25vh'}
                         // opacity={0.5}
                         paddingRight={'5rem'}
-                        backgroundImage={news.image}
+                        // backgroundImage={news.image}
                         backgroundSize={'cover'}
                         backgroundPosition={'center center'}
                     >
@@ -92,11 +92,14 @@ function NewsDetail({ scrollToRef }) {
                     </Flex>
 
                     <Box px={'10rem'} paddingTop={'2rem'} color={'#000080'}>
-                        <Text fontSize={'large'} py={5} textAlign={'justify'}
+                        {/* <Text fontSize={'large'} py={5} textAlign={'justify'}
                         // dangerouslySetInnerHTML={{ __html: addLineBreaks(`${news.location} : ${news.description}`) }}
                         >
                           {news.location} :  {news.description}
-                        </Text>
+                        </Text> */}
+                        <center>
+                        <img height={'600px'} width={'450px'} src={news.image}/>
+                        </center>
 
                     </Box>
                 </>
