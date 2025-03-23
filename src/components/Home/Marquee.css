@@ -1,40 +1,47 @@
 .marquee-row {
   display: flex;
-  overflow: hidden; /* Ensures no overflow beyond the container */
+  overflow: hidden; /* Hide overflow content */
   width: 100%;
   position: relative;
   white-space: nowrap;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .marquee-content {
   display: flex;
   gap: 50px; /* Adjust the gap between images */
-  animation: marquee-left-right 20s linear infinite;
-  animation-play-state: running; /* By default, the animation runs */
+  animation: marquee-left-right 60s linear infinite; /* Increase duration for smoother animation */
+  min-width: max-content; /* Ensure content takes its full width */
+}
+
+/* Duplicate content for seamless looping */
+.marquee-row .marquee-content::after {
+  content: "";
+  display: flex;
+  gap: 50px; /* Same gap as marquee-content */
 }
 
 /* Pause animation on hover */
 .marquee-content:hover {
-  animation-play-state: paused; /* Pauses the animation when hovering over the container */
+  animation-play-state: paused; /* Pause animation when hovered */
 }
 
 /* Image styles */
 .marquee-content img {
-  width: 280px;
-  height: 150px;
-  object-fit: cover;
+  max-width: 280px; /* Limit image width while preserving aspect ratio */
+  max-height: 150px; /* Limit image height while preserving aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
   border-radius: 10px;
   cursor: pointer;
 }
 
-/* Animation */
+/* Continuous animation */
 @keyframes marquee-left-right {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%); /* Move halfway through the duplicated content */
+  to {
+    transform: translateX(-100%);
   }
 }

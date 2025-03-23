@@ -65,7 +65,7 @@ function Awards({ scrollToRef }) {
                                     p={4}
                                 >
                                     {[
-                                        `(a) “SIATI AWARD FOR EXCELLENCE” : SIATI instituted  this award to Industries from the year 1992 for Excellence in indigenous development/ Import Substitution of aerospace material, components structures, equipment and systems etc. The Awards are given on the basis of nominations received from the Certifying Agencies and the user organizations like DRDO, HAL, ISRO NAL, IAF etc. So far about 160 industries are recipient of these awards.`,
+                                        `(a) “SIATI AWARD FOR EXCELLENCE IN INDIGENISATION” : SIATI instituted  this award to Industries from the year 1992 for Excellence in indigenous development/ Import Substitution of aerospace material, components structures, equipment and systems etc. The Awards are given on the basis of nominations received from the Certifying Agencies and the user organizations like DRDO, HAL, ISRO NAL, IAF etc. So far about 160 industries are recipient of these awards.`,
                                         `(b) "SIATI AWARD FOR LIFETIME SERVICE AND ACHIEVEMENTS” was instituted in the year 2011 to honour eminent persons who have made significant contribution in the aerospace, R&D, Industry and Education field.`,
                                         `(c) "SIATI AWARD FOR WOMEN ACHIEVER IN AEROSPACE” SIATI constituted this award from the year 2017 to honour eminent women in Aerospace who have made great contribution. `
                                     ].map((item, index) => {

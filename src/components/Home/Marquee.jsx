@@ -22,6 +22,48 @@ import _SIKA from '../../assets/exhibitorsDocs/sika.pptx';
 import _SIATI from '../../assets/exhibitorsDocs/siati.pptx';
 import './Marquee.css';
 
+import brahmos from '../../assets/exhibitorLogos/brahmos.jpg';
+import godrej from '../../assets/exhibitorLogos/godrej.png';
+import isro from '../../assets/exhibitorLogos/isro.png';
+import karnataka from '../../assets/exhibitorLogos/karnataka-government.png';
+import dassaultsys from '../../assets/exhibitorLogos/dassaultsys.png';
+import ABI from '../../assets/exhibitorLogos/ABI.jpg';
+import ADI from '../../assets/exhibitorLogos/ADI.png';
+import aequs2 from '../../assets/exhibitorLogos/aequs2.png';
+import aerospaceengrs from '../../assets/exhibitorLogos/aerospaceengrs.png';
+import alphatocol from '../../assets/exhibitorLogos/alpha-tocol-.png';
+import AnanthTech from '../../assets/exhibitorLogos/Ananth-Technologies-.jpg';
+import Ankit from '../../assets/exhibitorLogos/ankit.jpg';
+import ArvindChemi from '../../assets/exhibitorLogos/arvind_chemi.png';
+import avdel from '../../assets/exhibitorLogos/avdel.png';
+import avioil from '../../assets/exhibitorLogos/avioil.jpg';
+import beanalytics from '../../assets/exhibitorLogos/beanalytics.png';
+import bevelgears from '../../assets/exhibitorLogos/bevel-gears-Logo.jpg';
+import bliss from '../../assets/exhibitorLogos/bliss.png';
+import chennaimetco from '../../assets/exhibitorLogos/chennai metco.jpg';
+import dcxsys from '../../assets/exhibitorLogos/dcxsys.png';
+import delopt from '../../assets/exhibitorLogos/delopt.png';
+import dynamatics from '../../assets/exhibitorLogos/dynamatics.png';
+import edstech from '../../assets/exhibitorLogos/edstech.jpg';
+import expleo from '../../assets/exhibitorLogos/expleo.jpg';
+import genser from '../../assets/exhibitorLogos/genser.jpg';
+import gknaero from '../../assets/exhibitorLogos/gkn aero.png';
+import gowra from '../../assets/exhibitorLogos/gowra.png';
+import INDO_MIM from '../../assets/exhibitorLogos/INDO-MIM.png';
+import kspace from '../../assets/exhibitorLogos/kspace.png';
+import lmw from '../../assets/exhibitorLogos/lmw.png';
+import mak from '../../assets/exhibitorLogos/mak.png';
+import menonandmenon from '../../assets/exhibitorLogos/menon and menon.png';
+import micronel from '../../assets/exhibitorLogos/micronel.jpg';
+import msalogo from '../../assets/exhibitorLogos/MSA-LOGO.jpg';
+import nandanlogo from '../../assets/exhibitorLogos/Nandanlogo.jpg';
+import nauticalwings from '../../assets/exhibitorLogos/nautical_wings_logo.jpg';
+import NIlogo from '../../assets/exhibitorLogos/NIlogo.png';
+import pushpak from '../../assets/exhibitorLogos/pushpak-.png';
+import slntech from '../../assets/exhibitorLogos/sln tech.jpg';
+import TechEralogo1 from '../../assets/exhibitorLogos/Tech-Era-logo1.png';
+import unimech from '../../assets/exhibitorLogos/unimech.jpg';
+
 const Marquee = () => {
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
@@ -77,74 +119,154 @@ const Marquee = () => {
           ariaLabel="oval-loading"
         />
       </Box> : <>
-        <Panel style={{ width: '100%', overflow: 'hidden', height: '175px', marginBottom:'2rem' }}>
+        <Panel style={{ width: '100%', overflow: 'hidden', height: '175px', marginBottom: '2rem' }}>
           <div className="marquee-row marquee-left-right">
             <div className="marquee-content">
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('1')}
                 src={BEL} alt={'Bharat Electronics'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('2')}
                 src={BHARATDYNAMICS} alt={'Bharat Dynamics'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('5')}
                 src={SANAUTO} alt={'SAN Auto'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('3')}
                 src={COMSYS} alt={'COMSYS'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('4')}
                 src={SIKA} alt={'SIKA'}
               />
-              
+
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('6')}
                 src={SIATI} alt={'SIATI'}
               />
 
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('1')}
-                src={BEL} alt={'Bharat Electronics'}
+                src={brahmos} alt={'Brahmos'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('2')}
-                src={BHARATDYNAMICS} alt={'Bharat Dynamics'}
+                src={godrej} alt={'Godrej'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('5')}
-                src={SANAUTO} alt={'SAN Auto'}
+                src={isro} alt={'ISRO'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('3')}
-                src={COMSYS} alt={'COMSYS'}
+                src={karnataka} alt={'KARNATAKA GOVT.'}
               />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('4')}
-                src={SIKA} alt={'SIKA'} />
+                src={dassaultsys} alt={'dassault systemes'} />
               <img
-                // style={{ cursor: 'pointer' }}
-                // onClick={() => openDoc('6')}
-                src={SIATI} alt={'SIATI'}
+                src={ABI} alt={'ABI'}
               />
+              <img
+                src={ADI} alt={'ADI'}
+              />
+              <img
+                src={aequs2} alt={'aequs2'}
+              />
+              <img
+                src={aerospaceengrs} alt={'aerospaceengrs'}
+              />
+              <img
+                src={alphatocol} alt={'alphatocol'}
+              />
+              <img
+                src={AnanthTech} alt={'AnanthTech'}
+              />
+              <img
+                src={Ankit} alt={'Ankit'}
+              />
+              <img
+                src={ArvindChemi} alt={'ArvindChemi'}
+              />
+              <img
+                src={avdel} alt={'avdel'}
+              />
+              <img
+                src={avioil} alt={'avioil'}
+              />
+              <img
+                src={beanalytics} alt={'beanalytics'}
+              />
+              <img
+                src={bevelgears} alt={'bevelgears'}
+              />
+              <img
+                src={bliss} alt={'bliss'}
+              />
+              <img
+                src={chennaimetco} alt={'chennaimetco'}
+              />
+              <img
+                src={dcxsys} alt={'dcxsys'}
+              />
+              <img
+                src={delopt} alt={'delopt'}
+              />
+              <img
+                src={dynamatics} alt={'dynamatics'}
+              />
+              <img
+                src={edstech} alt={'edstech'}
+              />
+              <img
+                src={expleo} alt={'expleo'}
+              />
+              <img
+                src={genser} alt={'genser'}
+              />
+              <img
+                src={gknaero} alt={'gknaero'}
+              />
+              <img
+                src={gowra} alt={'gowra'}
+              />
+              <img
+                src={INDO_MIM} alt={'INDO_MIM'}
+              />
+              <img
+                src={kspace} alt={'kspace'}
+              />
+              <img
+                src={lmw} alt={'lmw'}
+              />
+              <img
+                src={mak} alt={'mak'}
+              />
+              <img
+                src={menonandmenon} alt={'menonandmenon'}
+              />
+              <img
+                src={micronel} alt={'micronel'}
+              />
+              <img
+                src={msalogo} alt={'msalogo'}
+              />
+              <img
+                src={nandanlogo} alt={'nandanlogo'}
+              />
+              <img
+                src={nauticalwings} alt={'nauticalwings'}
+              />
+              <img
+                src={NIlogo} alt={'NIlogo'}
+              />
+              <img
+                src={pushpak} alt={'pushpak'}
+              />
+              <img
+                src={slntech} alt={'slntech'}
+              />
+              <img
+                src={TechEralogo1} alt={'TechEralogo1'}
+              />
+              <img
+                src={unimech} alt={'unimech'}
+              />           
+              
             </div>
           </div>
-
-
         </Panel>
         {/* <Flex justify="center" mt={8}>
           <Button

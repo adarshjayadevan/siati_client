@@ -232,6 +232,45 @@ export default function AboutCards() {
                 </Box>
             </Box>
 
+            <Box p={5} position="relative">
+                <Text
+                    position="absolute"
+                    top={0}
+                    left="10%"
+                    marginTop={'0.5%'}
+                    backgroundColor={'white'}
+                    cursor="pointer"
+                    color="#686f8c"
+                    fontSize="lg"
+                >
+                    Governing Council
+                </Text>
+
+                <Box borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'}>
+                    {/* <center> */}
+                    <Box justifyItems={'center'}>
+                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                            <Text
+                                as={'span'}
+                                color={'#000080'}
+                            >
+                                Governing Council
+                            </Text>{' '}
+                        </Heading>
+                    </Box>
+                    <Box borderRadius="0">
+                        <Box justifyItems={'center'} height={'100%'} width={'100%'} paddingBlock={'2rem'}>
+
+                            <Box p={5}>
+                                <Text fontSize={'md'} color="gray.500" ><strong>SIATI is managed by a Governing Council consisting of nominated members from HAL, ISRO, DRDO, CEMILAC, DGCA, NAL and from Private Industries including SMEs.</strong> Governing Council has constituted a number of Empowered Members Committees and task forces from among the members for focused and need based action on important areas i.e. Aerospace Industry - </Text>
+                            </Box>
+                        </Box>
+                    </Box>
+                    {/* </center> */}
+
+                </Box>
+            </Box>
+
             {/* <Box p={5} position="relative">
                 <Text
                     position="absolute"
