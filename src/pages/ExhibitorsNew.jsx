@@ -101,7 +101,7 @@ function ExhibitorsNew({ scrollToRef }) {
                     <Box mt={'100px'} p={5}
                     //  textAlign="center"
                     >
-                        <Text fontSize={'md'} fontStyle={'italic'}>Members can give “Digital Exhibitions” (The Company Presentation Slides) and “Advertisements” (New Products / HR requirements etc.) for publishing on this Page for a period of ONE month.</Text>
+                        <Text fontSize={'md'} className='home_events_heading' color={'#00008B'} fontStyle={'italic'}>Members can give “Digital Exhibitions” (The Company Presentation Slides) and “Advertisements” (New Products / HR requirements etc.) for publishing on this Page for a period of ONE month.</Text>
                         <Box borderTop="2px solid" borderColor="blue.500" width="fit-content" mt={4}>
                             <Heading className='home_events_heading' mb={6}>Digital Exhibitors</Heading>
                         </Box>
