@@ -56,7 +56,7 @@ export default function AboutCards() {
     return (
         <>
             <Box p={5} position="relative">
-                <Text
+                {/* <Text
                     position="absolute"
                     top={0}
                     left="10%"
@@ -67,7 +67,7 @@ export default function AboutCards() {
                     fontSize="lg"
                 >
                     Formation
-                </Text>
+                </Text> */}
                 <Stack borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'} direction={{ base: 'column', md: 'row' }}>
                     <Flex flex={1} borderRadius="0">
                         <Image
@@ -182,7 +182,7 @@ export default function AboutCards() {
             {/* Nair Image only*/}
 
             <Box p={5} position="relative">
-                <Text
+                {/* <Text
                     position="absolute"
                     top={0}
                     left="10%"
@@ -193,7 +193,7 @@ export default function AboutCards() {
                     fontSize="lg"
                 >
                     Founder
-                </Text>
+                </Text> */}
 
                 <Box borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'}>
                     <center>
@@ -233,7 +233,7 @@ export default function AboutCards() {
             </Box>
 
             <Box p={5} position="relative">
-                <Text
+                {/* <Text
                     position="absolute"
                     top={0}
                     left="10%"
@@ -244,20 +244,23 @@ export default function AboutCards() {
                     fontSize="lg"
                 >
                     Governing Council
-                </Text>
+                </Text> */}
 
                 <Box borderRadius={'10px 10px 10px 10px'} border={'2px solid #000080'}>
                     {/* <center> */}
-                    <Box justifyItems={'center'}>
-                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                            <Text
-                                as={'span'}
-                                color={'#000080'}
-                            >
-                                Governing Council
-                            </Text>{' '}
-                        </Heading>
-                    </Box>
+                    <center>
+                        <Box justifyItems={'center'}>
+                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                                <Text
+                                    as={'span'}
+                                    color={'#000080'}
+                                >
+                                    Governing Council
+                                </Text>{' '}
+                            </Heading>
+                        </Box>
+
+                    </center>
                     <Box borderRadius="0">
                         <Box justifyItems={'center'} height={'100%'} width={'100%'} paddingBlock={'2rem'}>
 

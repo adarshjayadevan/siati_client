@@ -360,7 +360,7 @@ function Gallery({ scrollToRef }) {
               {permanentImages.map((elem, index) => (
                 <Box key={index} onClick={() => handleOpen(index, true)}>
                   <img src={elem.image} alt={elem.event} style={{ height: '200px', width: '100%', objectFit: 'cover' }} />
-                  <Text>{elem.event}</Text>
+                  {/* <Text>{elem.event}</Text> */}
                 </Box>
               ))}
             </Grid>
@@ -376,7 +376,7 @@ function Gallery({ scrollToRef }) {
               {gallery.map((elem, index) => (
                 <Box key={index} onClick={() => handleOpen(index, false)}>
                   <img src={elem.image} alt={elem.title} style={{ height: '200px', width: '100%', objectFit: 'cover' }} />
-                  <Text>{elem.title}</Text>
+                  {/* <Text>{elem.title}</Text> */}
                 </Box>
               ))}
             </Grid>
