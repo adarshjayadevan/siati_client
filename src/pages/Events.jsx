@@ -120,7 +120,7 @@ function Events({ scrollToRef }) {
                       {/* {elem?.startDate?.slice(4, 6)?.split(',')[0]} */}
                     </Box>
                   </Box>
-                  <Panel bodyFill style={{ height: '100%' }}>
+                  <Panel bodyFill style={{ height: '100%',color:'#070740' }}>
                     <Panel className='event-heading' header={elem?.event}
                       onClick={() => navigate(`/event/${elem?.eventId}`)}
                     >
@@ -182,7 +182,7 @@ function Events({ scrollToRef }) {
                       {/* {elem?.startDate?.slice(4, 6)?.split(',')[0]} */}
                     </Box>
                   </Box>
-                  <Panel bodyFill style={{ height: '100%' }}>
+                  <Panel bodyFill style={{ height: '100%',color:'#070740' }}>
                     <Panel className='event-heading' header={elem?.event}
                       onClick={() => navigate(`/event/${elem?.eventId}`)}
                     >

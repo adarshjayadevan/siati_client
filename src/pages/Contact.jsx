@@ -71,6 +71,7 @@ function ContactUs({ scrollToRef }) {
               w={{ base: "100%", lg: "30%" }}
               alignItems="stretch"
               textAlign="center"
+              color={`#070740`}
             >
               <Box>
                 <Text fontSize="3xl" fontWeight="bold">
@@ -108,7 +109,7 @@ function ContactUs({ scrollToRef }) {
               <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4} w="100%">
                 <Card boxShadow="md" borderRadius="lg" p={4}>
                   <CardBody>
-                    <Text fontSize="lg" fontWeight="bold" color="blue.500">
+                    <Text fontSize="lg" fontWeight="bold" color="#070740">
                       Contact Us
                     </Text>
                     <Text mt={2} color="gray.500">
@@ -125,7 +126,7 @@ function ContactUs({ scrollToRef }) {
 
                 <Card boxShadow="md" borderRadius="lg" p={4}>
                   <CardBody>
-                    <Text fontSize="lg" fontWeight="bold" color="blue.500">
+                    <Text fontSize="lg" fontWeight="bold" color="#070740">
                       Address
                     </Text>
                     <Text mt={2} color="gray.500">
@@ -139,7 +140,7 @@ function ContactUs({ scrollToRef }) {
 
                 <Card boxShadow="md" borderRadius="lg" p={4}>
                   <CardBody>
-                    <Text fontSize="lg" fontWeight="bold" color="blue.500">
+                    <Text fontSize="lg" fontWeight="bold" color="#070740">
                       Fax & Phone
                     </Text>
                     <Text mt={2} color="gray.500">

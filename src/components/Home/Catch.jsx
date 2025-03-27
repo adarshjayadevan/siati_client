@@ -121,7 +121,7 @@ const ResponsiveBanner = () => {
           {/* <Text fontSize={{ base: "md", md: "lg" }} fontWeight="bold">
             {banner?.title}
           </Text> */}
-          <Text fontStyle={'italic'} textAlign={'justify'} fontSize={'large'}>
+          <Text color={`#070740`} fontStyle={'italic'} textAlign={'justify'} fontSize={'large'}>
             Society of Indian Aerospace Technologies and Industries (SIATI) was founded in April 1991 to bring together the various industries,
             R&D and other organizations in the country engaged in the field of aerospace on a common platform to provide interaction
             among themselves as well as with overseas industries/ organizations to enhance growth opportunities for all. SIATI,

@@ -30,7 +30,7 @@ function PrezProfile({ scrollToRef }) {
         </Box>
 
 
-        <Box color={'#000080'} p={8}  pl={'5rem'} bg="white"
+        <Box color={'#00008B'} p={8}  pl={'5rem'} bg="white"
          >
             <Box mt={'100px'}>
               <Heading className='main-heading'>Dr. C.G. Krishnadas Nair</Heading>
